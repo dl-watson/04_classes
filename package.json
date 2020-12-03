@@ -1,0 +1,33 @@
+{
+  "name": "04_classes",
+  "version": "1.0.0",
+  "description": "# Linter Lab",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dl-watson/04_classes.git"
+  },
+  "keywords": [],
+  "author": "dl-watson <dlarkinwatson@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dl-watson/04_classes/issues"
+  },
+  "homepage": "https://github.com/dl-watson/04_classes#readme",
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}
