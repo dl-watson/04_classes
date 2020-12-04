@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const Stack = require("./components/Stack");
+const Stack = require("./lib/components/Stack");
 
 app.use(express.json());
 
