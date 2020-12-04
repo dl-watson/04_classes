@@ -9,10 +9,10 @@ Testing this endpoint requires sending raw JSON in this format:
 {
     "code": "func{[[tion[ add(a, b) { return a + b; }"
 }
-The response will be the result of the evaluation, either true or false
+The response will be the result of the evaluation
 */
 
-app.post("/api/v1/stack", (req, res) => {
+app.post("/lint", (req, res) => {
   res.send(evaluate(req.body.code));
 });
 
