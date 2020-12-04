@@ -4,9 +4,16 @@ const { evaluate } = require("./lib/components/utils/utils.js");
 
 app.use(express.json());
 
+/*
+Testing this endpoint requires sending raw JSON in this format: 
+{
+    "code": "func{[[tion[ add(a, b) { return a + b; }"
+}
+The response will be the result of the evaluation, either true or false
+*/
+
 app.post("/api/v1/stack", (req, res) => {
-  console.log(req.body.item);
-  res.send(evaluate(req.body.item));
+  res.send(evaluate(req.body.code));
 });
 
 app.listen(7890, () => {
